@@ -14,6 +14,7 @@ def generate_embedding(text: str) -> list:
     embedding = response['data'][0]['embedding']
     return embedding
 
+
 def preprocess_text(text: str) -> str:
     """Preprocess the text, e.g., lowercasing, removing extra whitespace."""
     return " ".join(text.lower().strip().split())

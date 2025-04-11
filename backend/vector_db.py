@@ -1,4 +1,5 @@
 # backend/vector_db.py
+
 import pinecone
 from backend.config import PINECONE_API_KEY, PINECONE_ENV, PINECONE_INDEX_NAME
 

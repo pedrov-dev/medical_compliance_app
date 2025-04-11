@@ -1,0 +1,11 @@
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+*.env
+env/
+venv/
+*.sqlite3
+
+# Docker
+*.log
+docker-compose.override.yml

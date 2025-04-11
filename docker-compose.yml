@@ -1,0 +1,25 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: medcomp_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=your_openai_api_key
+      - PINECONE_API_KEY=your_pinecone_api_key
+      - PINECONE_ENV=your_pinecone_env
+      - PINECONE_INDEX_NAME=medical-compliance-index
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: medcomp_frontend
+    ports:
+      - "80:80"
+    restart: always

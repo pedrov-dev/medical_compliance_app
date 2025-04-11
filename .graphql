@@ -1,0 +1,23 @@
+medical-compliance-app/
+├── backend/
+│   ├── __init__.py
+│   ├── app.py              # FastAPI application entry point
+│   ├── config.py           # Configuration (API keys, environment variables)
+│   ├── models.py           # Pydantic models for requests/responses
+│   ├── chatbot.py          # Chatbot logic: integrating OpenAI, context management, and answer generation
+│   ├── chat_memory.py      # Module for storing/retrieving conversation history
+│   ├── vector_db.py        # Pinecone integration for vector storage and retrieval
+│   ├── utils.py            # Utility functions (e.g., text preprocessing, embedding generation)
+│   ├── requirements.txt    # Python dependencies for backend
+│   └── Dockerfile          # Dockerfile to containerize the backend
+├── frontend/
+│   ├── index.html          # Basic HTML user interface
+│   ├── app.js              # JavaScript to call backend endpoints
+│   ├── styles.css          # Styling for the web interface
+│   └── Dockerfile          # Dockerfile to containerize the frontend (optional)
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions workflow for CI/CD (tests, linting, build)
+├── docker-compose.yml      # Compose file to orchestrate backend and frontend containers
+├── README.md               # Project overview, setup instructions, and GitHub integration notes
+└── .gitignore              # Ignore patterns for Git repository

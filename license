@@ -1,0 +1,12 @@
+
+---
+
+## Summary
+
+By adding GitHub integration and Docker containerization, the updated architecture now covers:
+
+- **Version Control with GitHub**: Structured repository with a proper `.gitignore` and documentation.
+- **Containerization**: Dockerfiles for both the backend and frontend; a Docker Compose file for easy orchestration.
+- **CI/CD Pipeline**: A GitHub Actions workflow file that installs dependencies, lints code, and builds Docker images on each push or pull request.
+
+This complete setup ensures a smooth development and deployment experience for your Medical Compliance RAG web application.

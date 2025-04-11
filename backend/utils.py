@@ -4,6 +4,7 @@ from backend.config import OPENAI_API_KEY
 
 openai.api_key = OPENAI_API_KEY
 
+
 def generate_embedding(text: str) -> list:
     """Generate vector embedding for text using OpenAI."""
     # Adjust parameters based on your embedding model

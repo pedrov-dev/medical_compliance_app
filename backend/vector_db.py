@@ -10,7 +10,9 @@ def get_index():
     # Connect to the index – create or update as needed.
     if PINECONE_INDEX_NAME not in pinecone.list_indexes():
         # Assume a dimension of 768 (or adjust depending on your embedding model)
-        pinecone.create_index(PINECONE_INDEX_NAME, dimension=768)
+        pinecone.create_index(
+            PINECONE_INDEX_NAME, 
+            dimension=768)
     return pinecone.Index(PINECONE_INDEX_NAME)
 
 

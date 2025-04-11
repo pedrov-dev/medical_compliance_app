@@ -1,6 +1,6 @@
 # backend/models.py
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List  # Removed unused Optional import
 
 class ChatMessage(BaseModel):
     role: str  # 'user' or 'assistant'
@@ -15,3 +15,4 @@ class ChatRequest(BaseModel):
 class ChatResponse(BaseModel):
     user_id: str
     responses: List[ChatMessage]
+    
